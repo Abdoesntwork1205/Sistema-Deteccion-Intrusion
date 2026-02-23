@@ -1,3 +1,4 @@
+<!-- about.ejs -->
 <%- include('partials/header') %>
 <%-include('partials/loadhead') %>
 <body onload="myFunction()" style="margin:0;">
@@ -5,94 +6,71 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <!-- complete body without including head -->
+  <!-- body completo sin incluir head -->
   <link rel="stylesheet" href="css/styles.css">
 <div class="container-fluid">
 <div class="about-section">
-    <h1>About Our System</h1>
+    <h1>Acerca del Sistema</h1>
     <br>
-    <p><h4>Development of Network Intrusion Detection System (NIDS), with Machine Learning and Deep Learning, Recurrent Neural Network models, MERN web I/O System.</h4></p>
+    <p><h4>Desarrollo de un Sistema de Detección de Intrusiones en Redes Locales (SDIRL) basado en Machine Learning y Deep Learning, utilizando modelos de Redes Neuronales Recurrentes (RNN), integrado a un sistema web de entrada y salida (I/O) bajo la arquitectura MERN, orientado al monitoreo, análisis y detección de amenazas para el fortalecimiento de la seguridad informática institucional.</h4></p>
     <br>
-    <p style="color: #fff;">Large numbers of businesses were affected by data infringes and Cyber -attacks due to dependency on internet. To prevent such malicious activity, the network requires a system that detects anomaly and inform the user and alerts the user.</p>
-    <p style="color: #fff;">This project detects Network Intrusion anomalies by using NSL - KDD data-set. The deep learning model Long Short Term Memory (LSTM), superior version of RNN (Recurrent Neural Network) and KNN K - Nearest Neighbour Algorithm) method are used for binary and multi class classification.</p>
-    <p style="color: #fff;">The user enters the hacking parameters in the front end which is designed by using ReactJS. The model predicts the type of attack and gives information about the type of attack to the user. MongoDB is used for storing the data and NodeJS is served as back end framework.</p>
-    <p style="color: #fff;">The project is fully responsive and completely based on session and cookies concepts. Once the user authenticated and logged-in It will not ask the user to enter the login parameters again and again (next visit). It ask login parameters only when user click on logout button. And also using google oauth 2.0 for user authentication and storing user details in salted hash in the mongoDB.</p>
+    <p style="color: #fff;">El uso intensivo de las tecnologías de información y la conectividad a Internet en la Contraloría Municipal de Barinas ha incrementado la necesidad de fortalecer la seguridad de sus redes locales, debido a los riesgos asociados a accesos no autorizados y ataques cibernéticos. En este contexto, se hace imprescindible la implementación de un sistema que permita vigilar el tráfico de red, detectar comportamientos irregulares y emitir alertas oportunas al personal autorizado, garantizando la protección de la información institucional y la continuidad operativa del organismo.</p>
+    <p style="color: #fff;">Este proyecto se orienta a la identificación de intrusiones y comportamientos anómalos en redes de datos, apoyándose en el conjunto de datos NSL-KDD como base para el entrenamiento y validación. Se integran técnicas de Deep Learning, destacando el uso de Long Short-Term Memory (LSTM) como una evolución de los modelos Recurrent Neural Network, junto con el algoritmo K-Nearest Neighbour (KNN), permitiendo realizar clasificaciones tanto binarias como multiclase para diferenciar tráfico normal de múltiples categorías de ataques de red.</p>
+    <p style="color: #fff;">El sistema permite que el usuario introduzca los parámetros de análisis a través de una interfaz web desarrollada con ReactJS. A partir de estos datos, el modelo procesa la información y determina el tipo de ataque detectado, proporcionando al usuario detalles relevantes sobre la amenaza identificada. Para la gestión y almacenamiento de la información se utiliza MongoDB, mientras que NodeJS funciona como el marco de trabajo del backend, garantizando la comunicación entre la interfaz y los modelos de detección.</p>
+    <p style="color: #fff;">El sistema ha sido estructurado para operar correctamente en distintos entornos y dispositivos, apoyándose en mecanismos de gestión de sesiones y cookies para el control de acceso. Una vez que el usuario es validado, el acceso se mantiene activo sin requerir la reintroducción constante de credenciales, siendo necesaria una nueva autenticación únicamente cuando se ejecuta el cierre de sesión. Adicionalmente, se incorpora un esquema de autenticación federada mediante Google OAuth 2.0, y los datos de identificación de los usuarios se resguardan en MongoDB utilizando salted hash, fortaleciendo la seguridad y confidencialidad de la información almacenada.</p>
   </div>
 </div>
   <br><br><br>
-  <h1 style="text-align:center">Our Team</h1>
+  <h1 style="text-align:center">Equipo Encargado del Sistema</h1>
 <div class="container-fluid">
   <div class="row" style="color: #fff;">
-  <div class="card card-about text-center" style="width: 22rem; margin: 0px 30px 30px 30px; background-color: #71C9CE">
-    <img class="card-img-top" src="css/sohail.JPG" alt="sohail">
+  <div class="card card-about text-center" style="width: 22rem; margin: 0px 30px 30px 30px; background-color: #2264a6">
+    <img class="card-img-top" src="css/abdiel.PNG" alt="abdiel">
     <div class="card-body"  >
       
-      <h4 class="card-title">Shaik Sohail Hussain</h4>
+      <h4 class="card-title">Abdiel Asad Urbina Páez</h4>
       <!-- <h5 class="card-title">21BD5A0511</h5> -->
-      <h6 class="card-title">MERN Stack and Algorithms</h6>
-      <p class="card-text">I'm a Computer Science student. My theme of interest is web development. And my eager interest has made me to build many web applications from frontend to backend. I like to create and design websites, web applications integrated with APIs, databases and machine learning algorithms etc. And I am passionate in learning new technologies and responsible towards my work.</p>
+      <h6 class="card-title">Estudiante Universitario</h6>
+      <p class="card-text">Soy estudiante de Ingeniería en Informática en la UNELLEZ, con interés en el desarrollo web y experiencia en la realización de proyectos académicos relacionados con mi carrera, trabajando principalmente en equipos colaborativos. Tengo un fuerte enfoque en el frontend, con habilidades en diseño e implementación de interfaces, integración con bases de datos y APIs, y un interés constante en aprender nuevas tecnologías y mejorar mis competencias profesionales.</p>
       <div class="container-fluid">
-        <a href="https://www.shaiksohail.xyz/" target="_blank"><i class="social-icon fas fa-regular fa-globe fa-2x" style="color: #fff;"></i></a>
-        <a href="https://github.com/shaik-sohail-72" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
-        <a href="https://www.linkedin.com/in/shaik-sohail-a7b7aa240/" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
-        <a href="mailto:shaiksohailhu7n@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
+        <a href="https://linktr.ee/fleetwood.vzla" target="_blank"><i class="social-icon fas fa-regular fa-globe fa-2x" style="color: #fff;"></i></a>
+        <a href="https://github.com/Abdoesntwork1205" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
+        <a href="https://www.linkedin.com/in/abdiel-urbina-4006bb3aa/" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
+        <a href="mailto:abdielasad12@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
         </div>
     </div>
   </div>
 
-  <div class="card card-about text-center" style="width: 22rem; height:450px; margin: 0px 30px 30px 30px; background-color: #71C9CE">
+
+  <div class="card card-about text-center" style="width: 22rem; margin: 0px 30px 30px 30px; background-color: #2264a6">
+    <img class="card-img-top" src="css/edwin.JPG" alt="edwin">
     <div class="card-body"  >
-      <h4 class="card-title">Shifa Maheen</h4>
+      <h4 class="card-title">Edwin Jesús Aguilar Salazar</h4>
       <!-- <h5 class="card-title">21BD5A0512</h5> -->
-      <h6 class="card-title">Front-end Development</h6>
-      <p class="card-text">I'm a Computer Science student. My theme of interest is Video Editing and developing  Software products.I am passionate to learn the functionalities of new softwares emerging in the market. I love to code and develop new applications using my programming skills.</p>
+      <h6 class="card-title">Coordinador Informático</h6>
+      <p class="card-text">Profesional con amplia experiencia en informática, parte del equipo encargado de la Contraloría Municipal de Barinas, especializado en gestión de redes y sistemas de información. Durante el proyecto, se destacó por su orientación y apoyo constante, supervisando la documentación de redes y proporcionando los datos necesarios para la realización de sondeos y pruebas de machine learning. Su experiencia y guía fueron clave para garantizar la calidad, confiabilidad y aplicación práctica del sistema desarrollado.</p>
       <div class="container-fluid">
-        <a href="https://github.com/shifamaheen" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
-        <a href="https://www.linkedin.com/in/shifa-maheen-2b7a10241/" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
-        <a href="mailto:shifamaheen77290@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
+        <a href="https://github.com/szLuis" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
+        <a href="https://www.linkedin.com/in/edwin-aguilar-b85891348/" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
+        <a href="mailto:cmunicipalbarinas2022@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
         </div>
     </div>
   </div>
 
-  <div class="card card-about text-center" style="width: 22rem; height:400px; margin: 0px 30px 30px 30px; background-color: #71C9CE">
+  <div class="card card-about text-center" style="width: 22rem; margin: 0px 30px 30px 30px; background-color: #2264a6">
+    <img class="card-img-top" src="css/colaboracion.JPG" alt="colaboracion">
     <div class="card-body"  >
-      <h4 class="card-title">Mohammed Basheer Uddin</h4>
+      <h4 class="card-title">¿Estás interesado en colaborar?</h4>
       <!-- <h5 class="card-title">21BD5A0511</h5> -->
-      <h6 class="card-title">Research,Presentation,Developer</h6>
-      <p class="card-text">Good in Presenting myself, with good communication skills , Good hands on  technical skills and with a belief in team work.</p>
+      <h6 class="card-title">¡Necesitamos tu ayuda!</h6>
+      <p class="card-text">Se busca asistencia para la personalización y optimización del sistema, incluyendo aspectos como la adaptación del entorno a necesidades específicas, la implementación de funcionalidades dinámicas, la gestión y edición de usuarios, así como la elaboración de documentación técnica que permita entrenar la máquina con otros protocolos de detección y ampliar sus capacidades de análisis. Esto con el fin de mejorar la eficiencia y la escalabilidad del sistema. Comúnicate con nosotros en los siguientes enlaces: </p>
       <div class="container-fluid">
-        <a href="https://github.com/Central-Cee" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
-        <a href="https://www.linkedin.com/in/basheer-uddin-64a20425a/" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
-        <a href="mailto:saifmohammed825@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
+        <a href="https://github.com/Abdoesntwork1205" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
+        <a href="https://www.linkedin.com/in/abdiel-urbina-4006bb3aa/" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
+        <a href="mailto:abdielasad12@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
         </div>
     </div>
   </div>
-
-  <div class="card card-about text-center" style="width: 22rem; margin: 0px 30px 30px 30px; background-color: #71C9CE">
-    <div class="card-body"  >
-      <h4 class="card-title">Shubham Mola</h4>
-      <!-- <h5 class="card-title">21BD5A0511</h5> -->
-      <h6 class="card-title">Research, Documentation </h6>
-      <p class="card-text"> I am passionate in learning new technologies and responsible towards working.</p>
-      <div class="container-fluid">
-        <a href=" https://github.com/shubhammola" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
-        <a href="https://www.linkedin.com/mwlite/in/shubham-mola-18ab20250" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
-        <a href="mailto:molashubham11@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
-        </div>
-    </div>
-  </div>
-  <div class="card card-about text-center" style="width: 22rem; margin: 0px 30px 30px 30px; background-color: #71C9CE">
-    <div class="card-body"  >
-      <h4 class="card-title">Muhammad Saif</h4>
-      <!-- <h5 class="card-title">21BD5A0511</h5> -->
-      <h6 class="card-title">Model Building and Project Imporvisation.</h6>
-      <p class="card-text">I'm a computer science student , In my domain I do not have any particular field of interest because I am flexible enoungh to work in any domain in CS except those which conflicts my beliefs.</p>
-      <div class="container-fluid">
-        <a href="https://github.com/MohdSaif-1807" target="_blank"><i class="social-icon fab fa-github fa-2x" style="color: #fff;"></i></a>
-        <a href="#" target="_blank"><i class="social-icon fab fa-linkedin fa-2x" style="color: #fff;"></i></a>
-        <a href="mailto:saifmohd1807@gmail.com" target="_blank"><i class="social-icon fas fa-envelope fa-2x" style="color: #fff;"></i></a>
-        </div>
-    </div>
   </div>
 </div>
 </div>
@@ -106,4 +84,4 @@ var myVar;
 function myFunction() {
   myVar = setTimeout(showPage, 200);
 }
-<%- include('partials/loadfoot') %>
+<%- include('partials/loadfoot') %> 

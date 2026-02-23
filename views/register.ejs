@@ -1,3 +1,4 @@
+<!-- registers.ejs -->
 <%- include('partials/header') %>
 
 
@@ -11,25 +12,25 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <!-- complete body without including head -->
+  <!-- body completo sin incluir head -->
   <div class="row">
     <div class="login-box">
-      <h1>Sign Up</h1>
+      <h1>Registro de Usuario</h1>
       <form action="/register" method="post">
       <div class="textbox">
         <i class="fas fa-user login-icons"></i>
-        <input type="email" placeholder="User-Name (Email)" name="username">
+        <input type="email" placeholder="Usuario (E-mail)..." name="username">
       </div>
       <div class="textbox">
         <i class="fas fa-lock login-icons"></i>
-        <input type="password" placeholder="Password" name="password">
+        <input type="password" placeholder="Contraseña..." name="password">
       </div>
-      <button type="submit" class="btn btn-success">SIGN UP</button></form>
+      <button type="submit" class="btn btn-success">Crear</button></form>
       <a class="btn btn-block btn-social btn-google btn-dark" style="text-align: center;background-color: #dd4b39; #dd4b39" href="/auth/google" role="button">
         <i class="fab fa-google"></i>
-        Sign Up with Google
+        Crear con Google
       </a>
-      <a href="/login" style="color: white;float: right;font-size: small">Already have an account? Login</a>
+      <a href="/login" style="color: white;float: right;font-size: small">¿Ya tienes una cuenta? Inicia sesión aquí.</a>
       
         </div>
         </div>

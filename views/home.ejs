@@ -1,8 +1,10 @@
+<!-- home.ejs -->
 <!DOCTYPE html>
 <html>
+<link rel="icon" href="css/favicon.ico">
 <head>
   <meta charset="utf-8">
-  <title>NIDS</title>
+  <title>SIDRL - CONTRALORÍA MUNICIPAL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
@@ -22,121 +24,124 @@
 <body>
   <section class="colored-section" id="title">
     <div class="container-fluid">
-      <!-- Nav Bar -->
+      <!-- Barra de Navegación -->
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="" >NIDS</a>
+              <a class="navbar-brand" href="">
+              <img src="css/logo.png" alt="Logo" style="height:80px; margin-right:20px;">
+              SIDRL - CONTRALORÍA MUNICIPAL
+             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" >
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="/">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/submit">Predict</a>
+              <a class="nav-link" href="/submit">Detección</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/features">Features</a>
+              <a class="nav-link" href="/features">Características</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/attacks">Attacts</a>
+              <a class="nav-link" href="/attacks">Ataques</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/about">Sobre</a>
             </li>
             <li>
-              <a class="nav-link" href="/stats">Stats</a>
+              <a class="nav-link" href="/stats">Estadísticas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/logout">Logout</a>
+              <a class="nav-link" href="/logout">Salir</a>
             </li>
           </ul>
         </div>
       </nav>
-      <!-- Title -->
+      <!-- Título -->
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="big-heading">Network Intrusion Detection System</h1>
-          <a class="btn btn-light btn-lg download-button" href="/submit" ><i class="fa-solid fa-user"></i>  Sign-In</a>
-          <a class="btn btn-outline-light btn-lg download-button" href="/register"><i class="fa-solid fa-user-plus"></i>  Sign-Up</a>
+          <h1 class="big-heading">Sistema de Detección de Intrusiones en Redes Locales</h1>
+          <a class="btn btn-light btn-lg download-button" href="/submit" ><i class="fa-solid fa-user"></i>  Inicia Sesión</a>
+          <a class="btn btn-outline-light btn-lg download-button" href="/register"><i class="fa-solid fa-user-plus"></i>  Regístrate Aquí</a>
         </div>
         <div class="col-lg-6">
-          <img class="title-image" src="css/iphone6.png" alt="iphone-mockup">
+          <img src="css/laptop.png" alt="laptop-mockup"  style="position:absolute; right:-50px; bottom:-220px; width:800px; transform:rotate(14deg); filter:drop-shadow(0px 25px 50px rgba(0,0,0,0.45));";">
         </div>
       </div>
     </div>
   </section>
-  <!-- Features -->
+  <!-- Características -->
   <section class="white-section" id="features">
     <div class="container-fluid">
       <div class="row" style="color: #393E46;">
         <div class="feature-box col-lg-4">
           <i class="icon fa-solid fa-clock fa-4x"></i>
-          <h3 class="feature-title">Network Traffic Processing</h3>
-          <p class="feature-desc">Convert the traffic into multiple network parameter patterns (Signatures)</p>
+          <h3 class="feature-title">Procesamiento de Tráfico de Red</h3>
+          <p class="feature-desc">El sistema analiza el tráfico de la red y genera patrones que permiten detectar anomalías y ataques, mejorando el monitoreo de la actividad de la red.</p>
         </div>
         <div class="feature-box col-lg-4">
           <i class="icon fa-solid fa-brain fa-4x"></i>
-          <h3 class="feature-title">Prevent System</h3>
-          <p class="feature-desc">Prevent System acts based on the threat detected</p>
+          <h3 class="feature-title">Sistema Preventivo</h3>
+          <p class="feature-desc">El sistema responde automáticamente según la amenaza detectada, protegiendo el sistema frente a ataques.</p>
         </div>
         <div class="feature-box col-lg-4">
           <i class="icon fa-solid fa-masks-theater fa-4x"></i>
-          <h3 class="feature-title">Threat Reporting</h3>
-          <p class="feature-desc">Report/Log the threat</p>
+          <h3 class="feature-title">Reporte de Amenazas</h3>
+          <p class="feature-desc">El sistema registra las amenazas, creando informes que facilitan el análisis de incidentes y el historial de seguridad.</p>
         </div>
         <div class="feature-box col-lg-4">
           <i class="icon fa-sharp fa-solid fa-book-skull fa-4x"></i>
-          <h3 class="feature-title">Threat Classification</h3>
-          <p class="feature-desc">Classify the threat based on signature matching</p>
+          <h3 class="feature-title">Clasificación de Amenazas</h3>
+          <p class="feature-desc">El sistema identifica y clasifica ataques usando firmas predefinidas para determinar la acción apropiada.</p>
         </div>
         <div class="feature-box col-lg-4">
           <i class="icon fa-solid fa-users-rays fa-4x"></i>
-          <h3 class="feature-title">Anamaly Detection</h3>
-          <p class="feature-desc">Match the input network signature against already available normal traffic fignature to detect the zero-day attacks</p>
+          <h3 class="feature-title">Detección de Anomalías</h3>
+          <p class="feature-desc">El sistema detecta anomalías y ataques desconocidos comparando las firmas de red con el tráfico normal registrado.</p>
         </div>
         <div class="feature-box col-lg-4">
           <i class="icon fa-brands fa-searchengin fa-4x"></i>
-          <h3 class="feature-title">Signature Matching</h3>
-          <p class="feature-desc">Match the input signature against the already available threat signature patterns</p>
+          <h3 class="feature-title">Coincidencia de Firmas</h3>
+          <p class="feature-desc">El sistema identifica ataques conocidos comparando la firma de entrada con patrones de amenazas almacenados.</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- Testimonials -->
-  <section class="colored-section" id="testimonials" style="background-color: #00ADB5;">
+  <!-- Testimonios -->
+  <section class="colored-section" id="testimonials" style="background-color: #001359;">
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid">
           <div class="card text-center">
-            <div class="card-body" style="background-color: #71C9CE; border: none;">
-              <h5 class="card-title">Denial of Service (DoS)</h5>
-              <p class="card-text">A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.</p>
+            <div class="card-body" style="background-color: #2264a6; border: none;">
+              <h5 class="card-title">Denegación de Servicio / Denial of Service (DoS)</h5>
+              <p class="card-text">Este ataque busca interrumpir el funcionamiento de un sistema o red, impidiendo el acceso de los usuarios legítimos mediante saturación de tráfico o fallos provocados, afectando la disponibilidad de los servicios.</p>
             </div>
           </div>
         </div>
         <div class="carousel-item container-fluid">
           <div class="card text-center">
-            <div class="card-body" style="background-color: #71C9CE;">
-              <h5 class="card-title">Probe</h5>
-              <p class="card-text">Probing is another type of attack in which the intruder scans network devices to determine weakness in topology design or some opened ports and then use them in the future for illegal access to personal information.</p>
+            <div class="card-body" style="background-color: #2264a6;">
+              <h5 class="card-title">Probe (Sondeo)</h5>
+              <p class="card-text">Es un ataque que analiza la red para detectar vulnerabilidades o puertos abiertos, con el propósito de aprovecharlas posteriormente para accesos no autorizados.</p>
             </div>
           </div>
         </div>
         <div class="carousel-item container-fluid">
           <div class="card text-center">
-            <div class="card-body" style="background-color: #71C9CE;">
-              <h5 class="card-title">Remote to user (R2L)</h5>
-              <p class="card-text">Remote to user (R2L) is a type of computer network attacks, in which an intruder sends set of packets to another computer or server over a network where he/she does not have permission to access as a local user.</p>
+            <div class="card-body" style="background-color: #2264a6;">
+              <h5 class="card-title">Remote to User / Remote to Local (R2L)</h5>
+              <p class="card-text">Es un ataque que intenta acceder de forma remota a un sistema sin autorización, enviando datos a través de la red para comprometer sus recursos.</p>
             </div>
           </div>
         </div>
         <div class="carousel-item container-fluid">
           <div class="card text-center">
-            <div class="card-body" style="background-color: #71C9CE;">
-              <h5 class="card-title">User to root (U2R)</h5>
-              <p class="card-text">User to root (U2R) is an another type of attack where the intruder tries to access the network resources as a normal user,  and after several attempts, the intruder becomes as a full access user..</p>
+            <div class="card-body" style="background-color: #2264a6;">
+              <h5 class="card-title">User to Root (U2R)</h5>
+              <p class="card-text">Es un ataque en el que un intruso accede como usuario y escala para obtener control administrativo, pudiendo modificar configuraciones y acceder a información sensible.</p>
             </div>
           </div>
         </div>

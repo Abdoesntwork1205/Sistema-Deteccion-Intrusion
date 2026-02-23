@@ -1,4 +1,4 @@
-
+/* homeStyles.css */
 body {
     font-family: "Montserrat";
     text-align: center;
@@ -38,12 +38,12 @@ body {
   /* Sections */
   
   .colored-section {
-    background-color: #00ADB5;
+    background-color: #001359;
     color: #fff;
   }
   
   .white-section {
-    background-color: #E3FDFD;
+    background-color: #f9ffff;
   }
   
   /* Navigation Bar */
@@ -79,7 +79,7 @@ body {
   /* Title Section */
   
   #title {
-    background-color: #00ADB5;
+    background-color: #001359;
     color: #fff;
     text-align: left;
   }
@@ -112,18 +112,18 @@ body {
   }
   
   .icon {
-    color: #71C9CE;
+    color: #2264a6;
     margin-bottom: 1rem;
   }
   
   .icon:hover {
-    color: #00ADB5;
+    color: #001359;
   }
   
   /* Testimonial Section */
   
   #testimonials {
-    background-color: #71C9CE;
+    background-color: #2264a6;
   }
   
   .testimonial-text {
@@ -139,7 +139,7 @@ body {
   
   
   #press {
-    background-color: #71C9CE;
+    background-color: #2264a6;
     padding-bottom: 3%;
   }
   

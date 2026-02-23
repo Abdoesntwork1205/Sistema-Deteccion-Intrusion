@@ -1,3 +1,4 @@
+<!-- submit.ejs -->
 <%- include('partials/header') %>
 
 
@@ -9,25 +10,25 @@
 <div style="display:none;" id="myDiv" class="animate-bottom">
 <div class="container-fluid">
   <div class="row">
-<div class="card text-center" style="width: 23rem; margin: 30px; background-color: #71C9CE">
+<div class="card text-center" style="width: 23rem; margin: 30px; background-color: #2264a6">
   <div class="card-body">
-    <h5 class="card-title">RANDOM ROW PREDICT</h5>
-    <p class="card-text">It will take single row from validation data to predict the type of attack.</p>
-    <a href="/secrets" class="btn btn-dark" style="background-color: #24a0ed;">Predict</a>
+    <h5 class="card-title">DETECCIÓN DE FILA ALEATORIA</h5>
+    <p class="card-text">Tomará una fila del conjunto de datos de validación para predecir el tipo de ataque, de manera automática.</p>
+    <a href="/secrets" class="btn btn-dark" style="background-color: rgb(223, 130, 9);">Detectar</a>
   </div>
 </div>
 
 
-<div class="card text-center" style="width: 23rem; margin: 30px; background-color: #71C9CE">
+<div class="card text-center" style="width: 23rem; margin: 30px; background-color: #2264a6">
   <div class="card-body">
-    <h5 class="card-title">OPEN CSV</h5>
-    <p class="card-text">It will take a CSV file of rows ranging from ( 1 ..500.. n rows) and update the file with type of attack for each row.</p>
+    <h5 class="card-title">ABRIR .CSV</h5>
+    <p class="card-text">Tomará un archivo CSV con filas (desde 1 hasta 500 o más) y actualizará el archivo indicando el tipo de ataque para cada fila, lo más preciso posible.</p>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>  
   <script>  
   $(document).ready(function() {  
      $('#uploadForm').submit(function() {  
-         $("#status").empty().text("File is uploading...");  
+         $("#status").empty().text(" Subiendo...");  
         $(this).ajaxSubmit({  
             error: function(xhr) {  
                     status('Error: ' + xhr.status);  
@@ -47,7 +48,7 @@
       <form id="uploadForm" enctype="multipart/form-data" action="/uploadjavatpoint" method="post"> 
         <div class="textbox">
           <select name="selected_model">
-            <option value="" disabled="disabled" selected="selected">Select Algorithm</option>
+            <option value="" disabled="disabled" selected="selected">Selecciona un Algoritmo...</option>
             <option value="knn">KNN - 97%</option>
             <option value="rf">RANDOM FOREST - 97%</option>
             <option value="cnn">CNN - 95%</option>
@@ -55,17 +56,17 @@
           </select>
         </div>
         <div>
-			<input  class="btn btn-dark"  style="background-color: #24a0ed;" type="file" id="f1"  name="myfile" placeholder="f2" accept=".csv,.txt" onclick="myfunction_1()">
+			<input  class="btn btn-dark"  style="background-color: rgb(223, 130, 9);" type="file" id="f1"  name="myfile" placeholder="f2" accept=".csv,.txt" onclick="myfunction_1()">
 		</div>
         <br>
-       <input type="submit" id="bt-1" class="btn btn-dark"  style="background-color: #24a0ed;" value="Predict" name="submit" onclick="myfunction_2()" disabled><br/><br/>  
+       <input type="submit" id="bt-1" class="btn btn-dark"  style="background-color: rgb(223, 130, 9);" value="Detectar" name="submit" onclick="myfunction_2()" disabled><br/><br/>  
        <span id="status"></span>  
       </form>  
 	</div>
       <form action="/download-file">
         <div>
-            <button class="btn btn-dark" id="bt-2"   style="background-color: #24a0ed;" type="submit" disabled>Download File</button>
-           <!-- <p>NOTE : Please wait for 2 sec and download. If file doesn't change please Re-Download the file.</p>-->
+            <button class="btn btn-dark" id="bt-2"   style="background-color: rgb(223, 130, 9);" type="submit" disabled>Descargar Archivo</button>
+           <!-- <p>NOTE : Por favor, esperar 2 segundos antes de descargar. Si el archivo no se actualiza, vuelva a descargarlo.</p>-->
         </div>
     </form>
   </div>
@@ -84,11 +85,11 @@
 </script>
 
 
-<div class="card text-center" style="width: 23rem; margin: 30px;background-color: #71C9CE">
+<div class="card text-center" style="width: 23rem; margin: 30px;background-color: #2264a6">
   <div class="card-body">
-    <h5 class="card-title">Enter Network Parameters</h5>
-    <p class="card-text">It will take the network parameters from the user and predict the type of attack.</p>
-    <a href="/parameters" class="btn btn-dark" style="background-color: #24a0ed;">Predict</a>
+    <h5 class="card-title">INGRESAR LOS PARÁMETROS DE LA RED LOCAL</h5>
+    <p class="card-text">Tomará los parámetros de la red ingresados por el usuario y predecirá el tipo de ataque informático.</p>
+    <a href="/parameters" class="btn btn-dark" style="background-color: rgb(223, 130, 9);">Detectar</a>
   </div>
 </div>
 </div>

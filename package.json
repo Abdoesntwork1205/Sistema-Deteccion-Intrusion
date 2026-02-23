@@ -1,7 +1,7 @@
 {
   "name": "secrets",
   "version": "1.0.0",
-  "description": "Cyber Security: Development of Network Intrusion Detection System (NIDS),   with Machine Learning and Deep Learning, Recurrent Neural Network models, MERN web I/O System.\r ## How to start: \r Step-1 : Fork or Clone the project using command [git clone \"https://github.com/Shaik-Sohail-72/Network-Intrusion-Detection-Using-Deep-Learning.git\"]   \r Step-2 : Create a .env file and set up the dovenv variable which is used in app.js (or) remove dotenv variables from app.js and set the links like mongoDB link etc.            \r Step-3 : Use command [npm install] to install all the packages.                                                                                                          \r Step-4 : Use command [node app.js] to run it locally.\r ## Description : \r Large numbers of businesses were affected by data infringes and Cyber -attacks due to dependency on internet. To prevent such malicious activity, the network requires a system that detects anomaly and inform the user and alerts the user.",
+  "description": "Desarrollo de un Sistema de Detección de Intrusiones en Redes Locales (SDIRL) orientado a la seguridad cibernética de las redes locales de la Contraloría Municipal de Barinas, cuyo propósito es monitorear, analizar y detectar actividades maliciosas o accesos no autorizados, fortaleciendo la protección de la información institucional y la integridad de la infraestructura tecnológica.",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",

@@ -1,3 +1,4 @@
+<!-- parameters.ejs -->
 <%-include('partials/header') %>
 
 
@@ -10,15 +11,15 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <!-- complete body without including head -->
+  <!-- body completo sin añadir head -->
   <div class="row">
     <div class="login-box">
-      <h1>Parameters</h1>
+      <h1>Parámetros del Usuario</h1>
       <form action="/parameters" method="post">
 
         <div class="textbox">
           <select name="protocol_type">
-            <option value="" disabled="disabled" selected="selected">Protocol Type</option>
+            <option value="" disabled="disabled" selected="selected">Tipo de Protocolo</option>
             <option value="tcp">TCP</option>
             <option value="udp">UDP</option>
             <option value="icmp">ICMP</option>
@@ -26,7 +27,7 @@
         </div>
       <div class="textbox">
         <select name="service">
-          <option value="" disabled="disabled" selected="selected">Service</option>
+          <option value="" disabled="disabled" selected="selected">Servicio</option>
           <option value="IRC">IRC</option>
           <option value="X11">X11</option>
           <option value="Z39_50">Z39_50</option>
@@ -102,7 +103,7 @@
       </div>
       <div class="textbox">
         <select name="flag">
-          <option value="" disabled="disabled" selected="selected">Flag</option>
+          <option value="" disabled="disabled" selected="selected">Indicador</option>
           <option value="OTH">OTH</option>
           <option value="REJ">REJ</option>
           <option value="RSTO">RSTO</option>
@@ -169,7 +170,7 @@
         <input type="text" placeholder="dst_host_rerror_rate" name="dst_host_rerror_rate">
       </div>
 
-      <button type="submit" class="btn">Predict</button></form> 
+      <button type="submit" class="btn">Detectar</button></form> 
     </div>
     </div>
 <%-include('partials/footer') %>

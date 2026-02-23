@@ -142,46 +142,46 @@ lstm_bin= tf.keras.models.load_model('lstm_latest_bin.h5')
 lstm_multi= tf.keras.models.load_model('lstm_latest_multiclass.h5')
 val_knn=knn_bin.predict(l1)
 if(val_knn[0]==0):
-    print('KNN algorithm binary class:Normal')
+    print('Algoritmo KNN, Clase Binaria: Normal')
 else:
-    print('KNN algorithm binary class:Attack')
+    print('Algoritmo KNN, Clase Binaria: Ataque')
 #print('KNN Algorithm multi class:',knn_multi.predict(l1))
 tp_knn=knn_multi.predict(l1)
 for i in tp_knn:
     tp_knn=i
 
-print('KNN Multi Class Type : ',tp_knn)
+print('Algoritmo KNN, Tipo Multi-Clase: ',tp_knn)
 if(tp_knn=='dos'):
-   print('KNN  Description : A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.')
+   print('Descripción KNN: Un ataque de Denegación de Servicio (DoS) es un ataque destinado a inhabilitar una máquina o red, haciéndola inaccesible para sus usuarios previstos. Los ataques DoS logran esto inundando el objetivo con tráfico o enviándole información que provoca un fallo del sistema (crash). En ambos casos, el ataque DoS priva a los usuarios legítimos (es decir, empleados, miembros o titulares de cuentas) del servicio o recurso que esperaban.')
 elif(tp_knn=='probe'):
-   print('KNN  Description : Probing is another type of attack in which the intruder scans network devices to determine weakness in topology design or some opened ports and then use them in the future for illegal access to personal information.')
+   print('Descripción KNN: El "Probing" (Sondeo) es otro tipo de ataque en el que el intruso escanea los dispositivos de red para determinar debilidades en el diseño de la topología o algunos puertos abiertos, para luego utilizarlos en el futuro para el acceso ilegal a información personal.')
 elif(tp_knn=='r2l'):
-   print('KNN Description : Remote to user (R2L) is a type of computer network attacks, in which an intruder sends set of packets to another computer or server over a network where he/she does not have permission to access as a local user.')
+   print('Descripción KNN: El acceso de Remoto a Local (R2L) es un tipo de ataque a redes informáticas en el que un intruso envía un conjunto de paquetes a otra computadora o servidor a través de una red en la que no tiene permiso de acceso como usuario local.')
 elif(tp_knn=='u2r'):
-   print('KNN  Description : User to root attacks (U2R) is an another type of attack where the intruder tries to access the network resources as a normal user,  and after several attempts, the intruder becomes as a full access user.')
+   print('Descripción KNN: Los ataques de Usuario a Raíz (U2R) son otro tipo de ataque en el que el intruso intenta acceder a los recursos de la red como un usuario normal y, tras varios intentos, el intruso se convierte en un usuario con acceso total (administrador o root).')
 else:
-    print('KNN Description : Data is safe')
+    print('Resumen KNN: Los datos son seguros.')
 val_rnd=randfor_bin.predict(l1)
 if(val_rnd[0]==0):
-    print('Random Forsest Algorithm Binary class:Normal')
+    print('Algoritmo Random Forest, Clase Binaria: Normal')
 else:
-    print('Random Forsest Algorithm Binary class:Attack')
+    print('Algoritmo Random Forest, Clase Binaria: Ataque')
     
 #print('Random Forsest Algorithm Multi class:',randfor_multi.predict(l1))
 tp_randfor=randfor_multi.predict(l1)
 for i in tp_randfor:
     tp_randfor=i
-print('RANDOM FOREST Multi Class Type : ',tp_randfor)
+print('Algoritmo Random Forest, Tipo Multi-Clase: ',tp_randfor)
 if(tp_randfor=='dos'):
-   print('RANDOM FOREST Description : A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.')
+   print('Descripción RF: Un ataque de Denegación de Servicio (DoS) es un ataque destinado a inhabilitar una máquina o red, haciéndola inaccesible para sus usuarios previstos. Los ataques DoS logran esto inundando el objetivo con tráfico o enviándole información que provoca un fallo del sistema (crash). En ambos casos, el ataque DoS priva a los usuarios legítimos (es decir, empleados, miembros o titulares de cuentas) del servicio o recurso que esperaban.')
 elif(tp_randfor=='probe'):
-   print('RANDOM FOREST Description : Probing is another type of attack in which the intruder scans network devices to determine weakness in topology design or some opened ports and then use them in the future for illegal access to personal information.')
+   print('El "Probing" (Sondeo) es otro tipo de ataque en el que el intruso escanea los dispositivos de red para determinar debilidades en el diseño de la topología o algunos puertos abiertos, para luego utilizarlos en el futuro para el acceso ilegal a información personal.')
 elif(tp_randfor=='r2l'):
-   print('RANDOM FOREST Description : Remote to user (R2L) is a type of computer network attacks, in which an intruder sends set of packets to another computer or server over a network where he/she does not have permission to access as a local user.')
+   print('Descripción RF: El acceso de Remoto a Local (R2L) es un tipo de ataque a redes informáticas en el que un intruso envía un conjunto de paquetes a otra computadora o servidor a través de una red en la que no tiene permiso de acceso como usuario local.')
 elif(tp_randfor=='u2r'):
-   print('RANDOM FOREST Description : User to root attacks (U2R) is an another type of attack where the intruder tries to access the network resources as a normal user,  and after several attempts, the intruder becomes as a full access user.')
+   print('Descripción RF: Los ataques de Usuario a Raíz (U2R) son otro tipo de ataque en el que el intruso intenta acceder a los recursos de la red como un usuario normal y, tras varios intentos, el intruso se convierte en un usuario con acceso total (administrador o root).')
 else:
-    print('RANDOM FOREST DESCRIPTION : Data is safe')
+    print('Resumen RF: Los datos son seguros.')
 tp1=l1
 scaler = Normalizer().fit(tp1)
 tp1 = scaler.transform(tp1)
@@ -193,9 +193,9 @@ for i in val_cnn:
     for j in i:
         tp.append(round(j))
 if(tp[0]==1):
-    print('CNN Algorithm binary class: Attack')
+    print('Algoritmo CNN, Clase Binaria: Ataque')
 else:
-    print('CNN Algorithm binary class: Normal')
+    print('Algoritmo CNN, Clase Binaria: Normal')
 tp1=l1
 scaler = Normalizer().fit(tp1)
 tp1 = scaler.transform(tp1)
@@ -207,24 +207,24 @@ for i in tp_cnn:
     for j in i:
         l.append(round(j))
 if(l[0]==1):
-   print('CNN Algorithm Multi class Type:Dos')
-   print('CNN Description : A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.')
+   print('Algoritmo CNN, Tipo Multi-Clase: DoS')
+   print('Descripción CNN: Un ataque de Denegación de Servicio (DoS) es un ataque destinado a inhabilitar una máquina o red, haciéndola inaccesible para sus usuarios previstos. Los ataques DoS logran esto inundando el objetivo con tráfico o enviándole información que provoca una caída del sistema. En ambos casos, el ataque DoS priva a los usuarios legítimos (es decir, empleados, miembros o titulares de cuentas) del servicio o recurso que esperaban.')
 
 elif(l[2]==1):
-   print('CNN Algorithm Multi class Type:Probe')
-   print('CNN Description : Probing is another type of attack in which the intruder scans network devices to determine weakness in topology design or some opened ports and then use them in the future for illegal access to personal information.')
+   print('Algoritmo CNN, Tipo Multi-Clase: Probe')
+   print('Descripción CNN: El sondeo (Probing) es otro tipo de ataque en el que el intruso escanea los dispositivos de red para determinar debilidades en el diseño de la topología o algunos puertos abiertos, para luego utilizarlos en el futuro para obtener acceso ilegal a información personal')
 
 elif(l[3]==1):
-   print('CNN Algorithm Multi class Type:R2L')
-   print('CNN Description : Remote to user (R2L) is a type of computer network attacks, in which an intruder sends set of packets to another computer or server over a network where he/she does not have permission to access as a local user.')
+   print('Algoritmo CNN, Tipo Multi-Clase: R2L')
+   print('Descripción CNN: El acceso remoto a local (R2L) es un tipo de ataque a redes informáticas en el que un intruso envía un conjunto de paquetes a otra computadora o servidor a través de una red en la que no tiene permiso de acceso como usuario local.')
 
 elif(l[4]==1):
-   print('CNN Algorithm Multi class Type:U2R')
-   print('CNN Description : User to root attacks (U2R) is an another type of attack where the intruder tries to access the network resources as a normal user,  and after several attempts, the intruder becomes as a full access user.')
+   print('Algoritmo CNN, Tipo Multi-Clase: U2R')
+   print('Descripción CNN: Los ataques de usuario a raíz (U2R) son otro tipo de ataque en el que el intruso intenta acceder a los recursos de la red como un usuario normal y, tras varios intentos, el intruso se convierte en un usuario con acceso total (administrador).')
 
 elif(l[1]==1):
-   print('CNN Algorithm Multi class Type:NORMAL')
-   print('CNN Description : This Is Safe')
+   print('Algoritmo CNN, Tipo Multi-Clase: Normal')
+   print('Resumen CNN: Los datos son seguros.')
 
 tp1=l1
 scaler = Normalizer().fit(tp1)
@@ -237,9 +237,9 @@ for i in val_lstm:
   for j in i:
       tp.append(round(j))
 if(tp[0]==1):
-    print('LSTM Algorithm binary class: Attack')
+    print('Algoritmo LSTM, Clase Binaria: Ataque')
 else:
-    print('LSTM Algorithm binary class: Normal')
+    print('Algoritmo LSTM, Clase Binaria: Normal')
 tp1=l1
 scaler = Normalizer().fit(tp1)
 tp1 = scaler.transform(tp1)
@@ -251,22 +251,22 @@ for i in tp_lstm:
     for j in i:
         l.append(round(j))
 if(l[0]==1):
-   print('LSTM Algorithm Multi class Type:Dos')
-   print('LSTM Description : A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.')
+   print('Algoitmo LSTM, Tipo Multi-Clase: DoS')
+   print('Descripción LSTM: Un ataque de Denegación de Servicio (DoS) es un ataque destinado a inhabilitar una máquina o red, haciéndola inaccesible para sus usuarios previstos. Los ataques DoS logran esto inundando el objetivo con tráfico o enviándole información que provoca una caída del sistema. En ambos casos, el ataque DoS priva a los usuarios legítimos (es decir, empleados, miembros o titulares de cuentas) del servicio o recurso que esperaban.')
 
 elif(l[2]==1):
-   print('LSTM Algorithm Multi class Type:Probe')
-   print('LSTM Description : Probing is another type of attack in which the intruder scans network devices to determine weakness in topology design or some opened ports and then use them in the future for illegal access to personal information.')
+   print('Algoitmo LSTM, Tipo Multi-Clase: Probe')
+   print('Descripción LSTM: El sondeo (Probing) es otro tipo de ataque en el que el intruso escanea los dispositivos de red para determinar debilidades en el diseño de la topología o algunos puertos abiertos, para luego utilizarlos en el futuro para obtener acceso ilegal a información personal.')
 
 elif(l[3]==1):
-   print('LSTM Algorithm Multi class Type:R2L')
-   print('LSTM Multi Class Type : R2L')
+   print('Algoitmo LSTM, Tipo Multi-Clase: R2L')
+   print('Descripción LSTM: El acceso remoto a local (R2L) es un tipo de ataque a redes informáticas en el que un intruso envía un conjunto de paquetes a otra computadora o servidor a través de una red en la que no tiene permiso de acceso como usuario local.')
 
 elif(l[4]==1):
-   print('LSTM Algorithm Multi class Type:U2R')
-   print('LSTM Description : User to root attacks (U2R) is an another type of attack where the intruder tries to access the network resources as a normal user,  and after several attempts, the intruder becomes as a full access user.')
+   print('Algoitmo LSTM, Tipo Multi-Clase: U2R')
+   print('Descripción LSTM: Los ataques de usuario a raíz (U2R) son otro tipo de ataque en el que el intruso intenta acceder a los recursos de la red como un usuario normal y, tras varios intentos, el intruso se convierte en un usuario con acceso total (administrador).')
 
 elif(l[1]==1):
-   print('LSTM Algorithm Multi class Type:NORMAL')
-   print('LSTM Description : This Is Safe')
+   print('Algoitmo LSTM, Tipo Multi-Clase: Normal')
+   print('Resumen LSTM: Los datos son seguros.')
 

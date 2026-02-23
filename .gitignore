@@ -79,3 +79,44 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# Python DLLs and runtime
+DLLs/
+Doc/
+Lib/
+include/
+libs/
+Scripts/
+share/
+tcl/
+Tools/
+python.exe
+python.pdb
+python3.dll
+python310.dll
+python310.pdb
+pythonw.exe
+pythonw.pdb
+vcruntime140.dll
+vcruntime140_1.dll
+
+# VS Code
+.vscode/
+
+# Uploaded test files
+Uploaded_files/*.csv
+Pruebas CSV/
+randomRowPrediction/*.csv

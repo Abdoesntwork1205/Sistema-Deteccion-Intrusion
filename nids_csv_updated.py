@@ -49,7 +49,7 @@ if(val=='knn'):
     if(i == 0):
       l.append('Normal')
     else:
-      l.append('Attack')
+      l.append('Ataque')
   l=np.array(l)
   df_validate['binary class']=l
   df_validate['multi class']=x_predict_multi
@@ -64,7 +64,7 @@ elif(val=='rf'):
     if(i == 0):
       l.append('Normal')
     else:
-      l.append('Attack')
+      l.append('Ataque')
   l=np.array(l)
   df_validate['binary class']=l
   df_validate['multi class']=x_predict_multi
@@ -115,7 +115,7 @@ elif(val=='cnn'):
     if(i==0):
         res.append('Normal')
     else:
-        res.append('Attack')
+        res.append('Ataque')
   l1=np.array(res)
   df_validate['binary class']=l1
   print(l)
@@ -162,12 +162,12 @@ elif(val=='lstm'):
     if(i==0):
         res.append('Normal')
     else:
-        res.append('Attack')
+        res.append('Ataque')
   l1=np.array(res)
   df_validate['binary class']=l1
   df_validate['multi class']=l
   df_validate.to_csv(path,index=False)
-print('completed')
+print('Completado')
   
   
 

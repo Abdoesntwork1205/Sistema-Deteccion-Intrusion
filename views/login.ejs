@@ -1,3 +1,4 @@
+<!-- login.ejs -->
 <%- include('partials/header') %>
 
 
@@ -9,24 +10,24 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <!-- complete body without including head -->
+  <!-- body completo sin incluir head -->
   <div class="row">
     <div class="login-box">
-      <h1>Login</h1>
+      <h1>Inicio de Sesión</h1>
       <form action="/login" method="post">
       <div class="textbox">
         <i class="fas fa-user login-icons"></i>
-        <input type="email" placeholder="User-Name (Email)" name="username">
+        <input type="email" placeholder="Usuario (E-mail)..." name="username">
       </div>
       <div class="textbox">
         <i class="fas fa-lock login-icons" ></i>
-        <input type="password" placeholder="Password" name="password">
+        <input type="password" placeholder="Contraseña..." name="password">
       </div>
-      <a href="/register" style="color: white;float: right;font-size: small">Don't have an account? Sign Up</a>
-      <button type="submit" class="btn btn-success">LOGIN</button></form>
+      <a href="/register" style="color: white;float: right;font-size: small">¿No tienes una cuenta? Regístrate aquí.</a>
+      <button type="submit" class="btn btn-success">Acceder</button></form>
       <a class="btn btn-block btn-social btn-google btn-dark" style="text-align: center;background-color: #dd4b39; #dd4b39" href="/auth/google" role="button">
         <i class="fab fa-google"></i>
-        Login with Google
+         Acceder con Google
       </a>
     </div>
     </div>

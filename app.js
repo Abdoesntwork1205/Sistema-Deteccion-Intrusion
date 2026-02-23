@@ -116,7 +116,7 @@ lstm_mul_acc="0.9590940929255195"
   let options={
     args:[]
   };
-  console.log("entering!!");
+  console.log("¡Entrando a la predicción aleatoria de SDIRL!");
   PythonShell.run('nids_random_updated.py',options, (err,response)=>{
     if (err)
     console.log(err);
@@ -159,7 +159,7 @@ lstm_mul_acc="0.9590940929255195"
 
       temp_lstm_desc=stringify(response[11]);
       lstm_desc=temp_lstm_desc.slice(2,-2);
-      console.log("entered!!");
+      console.log("¡Ya se ha terminado la detección aleatoria!");
       /*var things=require('./views/secrets_2.ejs');
       app.use('/secrets',things);*/
     }
@@ -221,12 +221,12 @@ app.post("/parameters",function(req,res)
   let options={
     args:[submitted_protocol_type,submitted_service,submitted_flag,submitted_logged_in,submitted_count,submitted_srv_serror_rate,submitted_srv_rerror_rate,submitted_same_srv_rate,submitted_diff_srv_rate,submitted_dst_host_count,submitted_dst_host_srv_count,submitted_dst_host_same_srv_rate,submitted_dst_host_diff_srv_rate,submitted_dst_host_same_src_port_rate,submitted_dst_host_serror_rate,submitted_dst_host_rerror_rate]
   };
-  console.log("entering!!");
+  console.log("Empezando la Detección por Protocolo...");
   PythonShell.run('nids_parameter_updated.py',options, (err,response)=>{
     if (err)
     console.log(err);
     if(response){
-      console.log("entered!!");
+      console.log("Terminó la Detección por Protocolo!");
       p_complete_answer=stringify(response);
 
       //knn
@@ -285,10 +285,10 @@ final_ans=""
 app.post('/uploadjavatpoint',function(req,res){  
       upload(req,res,function(err) {  
           if(err) {  
-              return res.end("Error uploading file.")
+              return res.end("Hubo un error al subir el archivo.")
           }  
-          res.end("File is uploaded successfully!"); 
-  console.log("hello");
+          res.end("El archivo está siendo detectado... Espere un momento, por favor."); 
+  console.log("Hola, Bienvenido al SDIRL.");
   const submitted_model=req.body.selected_model;
   console.log(submitted_model);
   console.log(submitted_csv_file);
@@ -302,7 +302,7 @@ app.post('/uploadjavatpoint',function(req,res){  
     if(response){
       temp_final_ans=stringify(response[0]);
       final_ans=temp_final_ans.slice(2,-2);
-      console.log("completed");
+      console.log("Completado, revise el archivo de resultados.");
       }
   }) 
 })
@@ -317,7 +317,7 @@ app.get('/index',(req,res)=>{
   
 });
 app.get('/download-file',(req,res)=>{
-  console.log("entered");
+  console.log("Archivo introducido, está siendo revisado...");
   path='./Uploaded_files/'
 path+=submitted_csv_file;
  res.download(path);
@@ -406,7 +406,7 @@ path+=submitted_csv_file;
     if (err) {
         console.log(err);
     }
-    console.log('file deleted');
+    console.log('Archivo Eliminado.');
     submitted_csv_file="";
 });
   }
@@ -449,5 +449,5 @@ let port = process.env.PORT;
   	port = 3000;
 	}
 app.listen(port, function() {
-  console.log("Server started on port 3000.");
+  console.log("Servidor empezado en el Puerto 3000.");
 });
