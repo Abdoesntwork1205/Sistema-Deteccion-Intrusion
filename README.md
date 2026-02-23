@@ -115,7 +115,7 @@ http://localhost:3000
 
 1️⃣ Clonar el repositorio:
 
-git clone https://github.com/Shaik-Sohail-72/Network-Intrusion-Detection-Using-Deep-Learning.git
+git clone https://github.com/Abdoesntwork1205/Sistema-Deteccion-Intrusion.git
 
 2️⃣ Configurar el archivo .env.
 
