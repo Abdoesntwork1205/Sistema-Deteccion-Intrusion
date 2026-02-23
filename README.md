@@ -1,4 +1,4 @@
-# Sistema de Detección de Intrusiones en Redes Locales para la CMB
+# Sistema de Detección de Intrusiones en Redes Locales para la Contraloría Municipal de Barinas
 
 🛡️ Sistema NIDS
 
